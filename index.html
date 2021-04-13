@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alata&display=swap">
+    <link rel="stylesheet" href="/styles/phone.css">
+    <title>Challenge 9</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__title">
+                Images
+            </h1>
+        </header>
+        <main class="principal__container">
+            <nav class="menu">
+                <ul>
+                    <li><span class="icon add"></span> add</li>
+                    <li><span class="icon folder"></span> files</li>
+                    <li><span class="icon clock"></span> clock</li>
+                    <li><span class="icon images"></span> images</li>
+                    <li><span class="icon music"></span> music</li>
+                </ul>
+            </nav>
+            <section class="principal">
+                <section class="principal__today"">
+                    <h2>today</h2>
+                    <figure>
+                        <picture>
+                            <source
+                            media="(min-width: 1200px)"
+                            srcset="/assets/images/foto3x.jpg">
+                            <source
+                            media="(min-width: 700px)"
+                            srcset="/assets/images/foto2x.jpg" >
+                            <img src="/assets/images/foto1x.jpg" alt="robotina">
+                        </picture>
+                        <picture>
+                            <source
+                            media="(min-width: 1200px)"
+                            srcset="/assets/images/women3x.jpg">
+                            <source
+                            media="(min-width: 700px)"
+                            srcset="/assets/images/women2x.jpg" >
+                            <img src="/assets/images/women1x.jpg" alt="robotina">
+                        </picture>
+                    </figure>
+                </section>
+                <section class="principal__last-week">
+                    <h2>past week</h2>
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                </section>
+            </section>
+        </main>
+        <footer>platzi master challenge 9</footer>
+    </div>
+</body>
+</html>
