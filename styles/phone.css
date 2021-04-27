@@ -28,21 +28,43 @@ html {
 }
 
 .menu {
-    border-right: aliceblue 1x solid;
+    border-right: darkorchid 2px solid;
     height: 85vh;
-    width: 50px;
+    width: 10vw;
     min-width: 30px;
     padding: 5px;
+
 }
-
-
 
 .menu ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    place-items: center;
+    justify-content: space-between;
     height: inherit;
     list-style: none;
+}
+
+.menu ul li {
+    cursor: pointer;
+}
+
+.menu ul li:hover {
+    color: blueviolet;
+}
+
+.menu ul li p {
+    display: none;
+}
+
+.menu ul li p:hover
+{
+    display: block;
+}
+.menu ul li span:hover
+ {
+    display: block;
+    background-color: blueviolet;
 }
 
 
@@ -94,6 +116,9 @@ html {
     flex-direction: row;
 }
 
+.principal {
+    padding: 20px;
+}
 .principal .principal__today {
     display: flex;
     flex-direction: column;
@@ -108,7 +133,8 @@ html {
     align-items: stretch;
 }
 
-.principal .principal__today img {
+.principal .principal__today img,
+.principal .principal__last-week .tennis {
     width: 100%;
     min-width: 320px;
     max-width: 670px;
@@ -118,14 +144,19 @@ html {
     padding: 5px 5px 5px 5px ;
 }
 
-.principal .principal__last-week .tennis {
-    width: 50%;
+
+.principal .principal__last-week .malt,
+.principal .principal__last-week .tower {
+    width: 24%;
     min-width: 320px;
     max-width: 670px;
-    height: 50%;
+    height: 25%;
     min-height: 580px;
     max-height: 500px;
+    padding: 5px 5px 5px 5px ;
+
 }
+
 
 .footer {
     grid-area: footer;
